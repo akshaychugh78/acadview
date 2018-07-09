@@ -52,27 +52,31 @@ print("Celsius from Fahrenheit: ", x.convertCelsius())
 
 #question 4
 
-class Student():
+class MovieDetails:
+def __init__(self,name,artist,year,ratings):
+        self.name=name
+        self.artist=artist
+        self.year=year
+        self.ratings=ratings
+   
+ 	def display(self):
+print("The",self.name,"starring",self.artist,"has been released in",self.year,"with the ratings",self.ratings)
 
-    def __init__(self,n,m,rn,y): 
-      self.name = n
-      self.marks = m
-      self.roll_no = rn
-      self.year = y
+    	def update(self):
+        name = input("Enter movie name: ")
+        self.name = name
+        artist = input("Enter artist name: ")
+        self.artist = artist
+        year = input("Enter year of release: ")
+        self.year = year
+        ratings = input("Enter ratings: ")
+        self.ratings = ratings
+        print("The",self.name,"starring",self.artist,"has been released in",self.year,"with the ratings",self.ratings)
 
-    def details(self):
-        print("name is:" , self.name)
-        print("marks are:" , self.marks)
-        print("roll no. is:" , self.roll_no)
-        print("year :" , self.year)
+movie=MovieDetails('Welcome','Akshay Kumar',2005,8.0)
+movie.display()
+movie.update()
 
-    def address(self,val):
-      self.address = val
-      print("address is:" , self.address)
-
-x = Student('akshay',11,67,2018)
-x.details()
-x.address('lado sarai')
 
 
 #question 5
