@@ -1,11 +1,9 @@
 #Question 1
-
-def area():
-    pi = 3.14
-    area = (pi*(radius**2))
-    return area
-radius = int(input("enter the radius="))
-print("the radius of circle is =",area())
+r = float(input("Input Radius:"))
+def area(r):
+    x=3.14*r*r
+    return x
+print ('Area of Circle:',area(r))
 
 #Question 2
 
