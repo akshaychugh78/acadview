@@ -41,7 +41,7 @@ finally:
 
 
 
-#Q2.Insert values in the tables.
+#Question 2
 
 import pymysql as pm
 
