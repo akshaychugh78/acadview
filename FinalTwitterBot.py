@@ -11,13 +11,13 @@ from nltk.corpus import stopwords
 
 
 #Authentication Consumer_Key
-Consumer_Key = 'SgtBBDtPnxGbc20G0OAvFvM9T'
-Consumer_Secret = 'mPsn8C1gBIFIQP1sg5cov6NLLKve2DsGrmqalPyjSleEWlz5oQ'
+Consumer_Key = ''
+Consumer_Secret = ''
 
 #Authentication Access_Token
 
-Access_Token = '811896074516328448-3qcZ4eM9jbiyCQoO46OGgmglTNXcBTa'
-Access_Token_Secret = 'n81a8UqXosFrBXen1kwXngCGMx3tjuZsaQLnNvL6Qn6vC'
+Access_Token = ''
+Access_Token_Secret = ''
 
 auth = tweepy.OAuthHandler(Consumer_Key,Consumer_Secret)
 auth.set_access_token(Access_Token,Access_Token_Secret)
@@ -60,7 +60,7 @@ def sent_analysis():
     query()
     from paralleldots import set_api_key,sentiment
 
-    set_api_key("ZLgGeYFRGNz2MjqNvVZOHk2ZyjTiKZ7JJNU8ebxHs44")
+    set_api_key("")
     
     paralleldots.get_api_key()
     for tweet in tweets:
